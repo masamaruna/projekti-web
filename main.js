@@ -1,7 +1,6 @@
 import * as THREE from 'three';
 
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-import {AmbientLight, Mesh} from "three";
 
 const scene = new THREE.Scene();
 
@@ -16,14 +15,20 @@ camera.position.set(0,0,1);
 
 const loader = new GLTFLoader();
 
+let model;
+
 loader.load( "assets/3d-models/maslenica-3d-model.glb", function ( gltf ) {
+
+    let model = gltf.scene;
 
     gltf.scene.scale.set(0.03, 0.03, 0.03);
     scene.add(gltf.scene);
+    scene.rotation.x = 0.3;
 
-    const light = new THREE.PointLight( 0xffffff, 1, 1000 );
-    light.position.set( 0, 10, 4 );
+    const light = new THREE.PointLight( 0xffffff, 1, 10000 );
+    light.position.set( 100, -1000, 1 );
     light.castShadow = true; // default false
+    light.shadow.radius = 100;
     scene.add( light );
 
 }, undefined, function ( error ) {
@@ -32,12 +37,18 @@ loader.load( "assets/3d-models/maslenica-3d-model.glb", function ( gltf ) {
 
 } );
 
+let currentRotation = 0;
+window.addEventListener("scroll", rotateOnScroll);
+function rotateOnScroll() {
+    currentRotation = window.scrollY / 50;
+    console.log(currentRotation);
+}
+
 function animate() {
     render();
     resizeCanvasToDisplaySize();
     requestAnimationFrame(animate);
-    scene.rotation.y += 0.01;
-    scene.rotation.x = 0.3;
+    scene.rotation.y = currentRotation;
 }
 
 function render() {
