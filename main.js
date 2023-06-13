@@ -40,7 +40,7 @@ loader.load( "assets/3d-models/maslenica-3d-model.glb", function ( gltf ) {
 let currentRotation = 0;
 window.addEventListener("scroll", rotateOnScroll);
 function rotateOnScroll() {
-    currentRotation = window.scrollY / 50;
+    currentRotation = window.scrollY / 90;
     console.log(currentRotation);
 }
 

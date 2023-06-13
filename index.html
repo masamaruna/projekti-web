@@ -17,6 +17,8 @@
         body {
             background-color: #ffffff;
             font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            line-height: 1.6;
         }
 
         canvas {
@@ -32,7 +34,7 @@
             /*background-image: url("/assets/img/background-v1.webp");*/
             /*background-position-y: -100px;*/
             background-color: #b6b6b6;
-            padding-bottom: 150px;
+            padding-bottom: 170px;
         }
 
         .negative-margin {
@@ -52,8 +54,36 @@
             background-color: #d9d9d9 !important;
         }
 
-        .footer {
+        .gray-background {
             background-color: #aaaaaa;
+        }
+
+        .invert {
+            filter: invert(100%);
+        }
+
+        .nav-logo {
+            width: 195px;
+            height: auto;
+            position: absolute;
+            top: 0;
+        }
+
+        .nav-margin {
+            margin-left: 200px;
+        }
+
+        .mont-bold {
+            font-weight: 700;
+        }
+
+        .mont-extrabold {
+            font-weight: 800;
+        }
+
+        #threed-model {
+            margin-top: -150px;
+            margin-bottom: -100px;
         }
 
     </style>
@@ -70,23 +100,23 @@
 
 <!--NAVIGATION BAR-->
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
         <div class="container-fluid">
             <!--            <a class="navbar-brand" href="#">Navbar</a>-->
-            <img src="/assets/logo/pr-logo-short.webp" alt="HTML5 Icon" style="width: 55px; height: auto">
+            <img src="/assets/logo/pr-logo-short.webp" alt="PR logo" class="nav-logo">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav nav-margin mont-extrabold">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link active" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacts</a>
+                        <a class="nav-link active" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -100,12 +130,12 @@
 
 <!--LANDING-->
 
-    <div class="landing">
+    <div class="landing pt-5">
         <div class="container">
             <div class="row">
                 <div class="col-5"></div>
                 <div class="col-7">
-                    <p class="fw-normal text-end">
+                    <p class="text-end">
                         Picture this: It all started way back in 1998, when the world
                         <br>
                         was still figuring out what to do with scrunchies and pagers
@@ -140,15 +170,16 @@
 <div class="container">
 
 <!--PROJECT CARDS-->
+    <a name="projects"></a>
 
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5 negative-margin">
         <div class="col">
             <div class="card">
                 <img src="/assets/img/zeceve-drage/zeceve-drage-01.jpeg" class="card-img-top" alt="a picture of zeceve drage">
                 <div class="card-body">
-                    <h5 class="card-title">Projekt 01</h5>
+                    <p class="card-title mont-bold">Projekt 01</p>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-danger">See More</a>
+                    <a href="#" class="btn btn-danger mont-bold">See More</a>
                 </div>
             </div>
         </div>
@@ -157,9 +188,9 @@
             <div class="card">
                 <img src="/assets/img/bridges/bridges-01.jpeg" class="card-img-top" alt="a picture of a bridge">
                 <div class="card-body">
-                    <h5 class="card-title">Projekt 02</h5>
+                    <p class="card-title mont-bold">Projekt 02</p>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-danger">See More</a>
+                    <a href="#" class="btn btn-danger mont-bold">See More</a>
                 </div>
             </div>
         </div>
@@ -168,9 +199,9 @@
             <div class="card">
                 <img src="/assets/img/buildings/buildings-01.jpeg" class="card-img-top" alt="a picture of a building being made">
                 <div class="card-body">
-                    <h5 class="card-title">Projekt 03</h5>
+                    <p class="card-title mont-bold">Projekt 03</p>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-danger">See More</a>
+                    <a href="#" class="btn btn-danger mont-bold">See More</a>
                 </div>
             </div>
         </div>
@@ -179,9 +210,9 @@
             <div class="card">
                 <img src="/assets/img/zeceve-drage/zeceve-drage-01.jpeg" class="card-img-top" alt="a picture of zeceve drage">
                 <div class="card-body">
-                    <h5 class="card-title">Projekt 04</h5>
+                    <p class="card-title mont-bold">Projekt 04</p>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-danger">See More</a>
+                    <a href="#" class="btn btn-danger mont-bold">See More</a>
                 </div>
             </div>
         </div>
@@ -190,9 +221,9 @@
             <div class="card">
                 <img src="/assets/img/bridges/bridges-01.jpeg" class="card-img-top" alt="a picture of a bridge">
                 <div class="card-body">
-                    <h5 class="card-title">Projekt 05</h5>
+                    <p class="card-title mont-bold">Projekt 05</p>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-danger">See More</a>
+                    <a href="#" class="btn btn-danger mont-bold">See More</a>
                 </div>
             </div>
         </div>
@@ -201,9 +232,9 @@
             <div class="card">
                 <img src="/assets/img/buildings/buildings-01.jpeg" class="card-img-top" alt="a picture of a building being made">
                 <div class="card-body">
-                    <h5 class="card-title">Projekt 06</h5>
+                    <p class="card-title mont-bold">Projekt 06</p>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-danger">See More</a>
+                    <a href="#" class="btn btn-danger mont-bold">See More</a>
                 </div>
             </div>
         </div>
@@ -215,9 +246,9 @@
 
 <!--TEXT SEGMENT 02-->
 
-<div class="footer">
+<div class="gray-background py-5 mt-5">
     <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
             <div class="col-7">
                 <p>
                     Gone are the days of dusty tracing paper
@@ -244,7 +275,7 @@
                 </p>
             </div>
             <div class="col-5">
-                <img src="/assets/img/allplan-interface.jpeg" class="img-fluid" alt="allplan interface">
+                <img src="/assets/img/allplan-interface.jpeg" class="img-fluid rounded" alt="allplan interface">
             </div>
         </div>
 
@@ -253,8 +284,8 @@
 
 <!--SLIDER-->
 
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
+        <div id="carouselExample" class="carousel slide mt-5">
+            <div class="carousel-inner rounded">
                 <div class="carousel-item active">
                     <img src="/assets/img/nacrti/nacrt-01_1.webp" class="d-block w-100" alt="...">
                 </div>
@@ -265,11 +296,11 @@
                     <img src="/assets/img/nacrti/nacrt-02.webp" class="d-block w-100" alt="...">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <button class="carousel-control-prev invert" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <button class="carousel-control-next invert" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -283,7 +314,7 @@
 
 <!--TEXT SEGMENT 03-->
 
-    <div class="row text-center">
+    <div class="row text-center mt-5">
         <p>
             We've got charm, wit, and a knack for teamwork.
             <br>
@@ -291,7 +322,7 @@
             <br>
 
             <br>
-            <strong>And hey, we never compromise on quality – it's our middle name!</strong>
+            <span class="mont-bold fs-2">And hey, we never compromise on quality<br>– it's our middle name!</span>
         </p>
     </div>
 
@@ -299,7 +330,7 @@
 
 <!--3D OBJECT-->
 
-    <div id="threed-model" style="margin-top: -150px; margin-bottom: -100px; z-index: -99999">
+    <div id="threed-model" class="opacity-75">
         <canvas></canvas>
     </div>
 
@@ -307,10 +338,12 @@
 
 <!--CTA-->
 
-    <div class="row text-center">
-        <h2><strong>
+    <a name="contact"></a>
+
+    <div class="row text-center position-relative z-n1">
+        <span class="mont-extrabold fs-1">
             We'd love to work with you!
-        </strong></h2>
+        </span>
     </div>
 
 <!--END OF CTA-->
@@ -318,7 +351,7 @@
 
 <!--EMAIL FORM-->
 
-        <div class="container" style="max-width: 1000px">
+        <div class="container mt-3">
             <form>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Email address</label>
@@ -337,15 +370,15 @@
 
 <!--FOOTER-->
 
-    <div class="footer">
+    <div class="gray-background mt-5 py-5">
         <div class="container">
             <div class="row">
                 <div class="col-2">
-                    <img src="/assets/logo/pr-logo-short.webp" alt="PR d.o.o. logo" style="max-width: 150px">
+                    <img src="/assets/logo/pr-logo-short.webp" alt="PR d.o.o. logo" class="img-fluid">
                 </div>
                 <div class="col-4">
                     <p>
-                        Contact
+                        <span class="mont-bold">Contact</span>
                         <br>
                         pr@projekti.net
                         <br>
@@ -353,7 +386,7 @@
                         <br>
 
                         <br>
-                        Location
+                        <span class="mont-bold">Location</span>
                         <br>
                         Slavka Batušića 3
                         <br>
@@ -362,16 +395,16 @@
                 </div>
                 <div class="col-6 text-end">
                     <p>
-                        PR društvo s ograničenom odgovornošću
+                        <span class="mont-bold">PR</span> društvo s ograničenom odgovornošću
                         <br>
                         za projektiranje, građenje i nadzor
                         <br>
-                        VAT: 11188483589
+                        <span class="mont-bold">VAT:</span> 11188483589
                         <br>
                         <br>
                         <br>
                         <br>
-                        oblak  2023 - all rights reserved
+                        <span class="mont-bold">oblak  2023 - all rights reserved</span>
                     </p>
                 </div>
             </div>
