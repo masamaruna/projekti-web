@@ -1,6 +1,6 @@
 import * as THREE from 'three';
-
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import model from './assets/3d-models/maslenica-3d-model.glb';
 
 const scene = new THREE.Scene();
 
@@ -15,11 +15,9 @@ camera.position.set(0,0,1);
 
 const loader = new GLTFLoader();
 
-let model;
 
-loader.load( "assets/3d-models/maslenica-3d-model.glb", function ( gltf ) {
 
-    let model = gltf.scene;
+loader.load( model , function ( gltf ) {
 
     gltf.scene.scale.set(0.03, 0.03, 0.03);
     scene.add(gltf.scene);
