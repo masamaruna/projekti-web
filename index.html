@@ -94,9 +94,52 @@
 
         @media only screen and (max-width: 992px) {
             .footer-logo {
-                max-width: 50px;
+                max-width: 100px;
             }
         }
+
+        @media only screen and (max-width: 450px) {
+            .cta-txt-s {
+                padding-top: 15px;
+            }
+        }
+
+        @media only screen and (max-width: 450px) {
+            .segmentthree-txt-s {
+                padding-bottom: 15px;
+            }
+        }
+
+        @media only screen and (max-width: 365px) {
+            .cta-txt-xs {
+                padding-top: 60px;
+            }
+        }
+
+        @media only screen and (max-width: 365px) {
+            .segmentthree-txt-xs {
+                padding-bottom: 60px;
+            }
+        }
+
+        @media only screen and (max-width: 220px) {
+            .cta-txt-xxs {
+                padding-top: 80px;
+            }
+        }
+
+        @media only screen and (max-width: 220px) {
+            .segmentthree-txt-xxs {
+                padding-bottom: 80px;
+            }
+        }
+        
+        /*@media only screen and (max-width: 578px) {*/
+        /*    .card {*/
+        /*        padding-left: -20px;*/
+        /*        padding-right: -20px;*/
+        /*    }*/
+        /*}*/
 
     </style>
 
@@ -181,7 +224,7 @@
 <!--PROJECT CARDS-->
     <a name="projects"></a>
 
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 negative-margin">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gx-md-5 gx-0 gy-5 negative-margin">
         <div class="col">
             <div class="card">
                 <img src="/assets/img/zeceve-drage/zeceve-drage-01.jpeg" class="card-img-top" alt="a picture of zeceve drage">
@@ -326,7 +369,7 @@
 
 <!--TEXT SEGMENT 03-->
 
-    <div class="row text-center mt-5">
+    <div class="row text-center mt-5 segmentthree-txt-s segmentthree-txt-xs segmentthree-txt-xxs">
         <p>
             We've got charm, wit, and a knack for teamwork.
             <br>
@@ -350,7 +393,7 @@
 
 <!--CTA-->
 
-    <div class="row text-center position-relative z-n1">
+    <div class="row text-center position-relative z-n1 cta-txt-s cta-txt-xs cta-txt-xxs">
         <span class="mont-extrabold fs-1">
             We'd love to work with you!
         </span>
@@ -383,7 +426,7 @@
     <div class="gray-background mt-5 py-5">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-2">
+                <div class="col-12 col-md-2 pb-4">
                     <img src="/assets/logo/pr-logo-short.webp" alt="PR d.o.o. logo" class="img-fluid footer-logo">
                 </div>
                 <div class="col-12 col-md-4">
