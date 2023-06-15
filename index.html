@@ -69,8 +69,10 @@
             top: 0;
         }
 
-        .nav-margin {
-            margin-left: 200px;
+        @media only screen and (min-width: 992px) {
+            .nav-margin {
+                margin-left: 200px;
+            }
         }
 
         .mont-bold {
@@ -90,9 +92,6 @@
             .custom-opacity {
                 opacity: 0.2;
             }
-        }
-
-        @media only screen and (max-width: 992px) {
             .footer-logo {
                 max-width: 100px;
             }
@@ -102,9 +101,6 @@
             .cta-txt-s {
                 padding-top: 15px;
             }
-        }
-
-        @media only screen and (max-width: 450px) {
             .segmentthree-txt-s {
                 padding-bottom: 15px;
             }
@@ -114,9 +110,6 @@
             .cta-txt-xs {
                 padding-top: 60px;
             }
-        }
-
-        @media only screen and (max-width: 365px) {
             .segmentthree-txt-xs {
                 padding-bottom: 60px;
             }
@@ -126,9 +119,6 @@
             .cta-txt-xxs {
                 padding-top: 80px;
             }
-        }
-
-        @media only screen and (max-width: 220px) {
             .segmentthree-txt-xxs {
                 padding-bottom: 80px;
             }
@@ -423,7 +413,7 @@
 
 <!--FOOTER-->
 
-    <div class="gray-background mt-5 py-5">
+    <div class="gray-background mt-0 mt-md-5 py-5">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-2 pb-4">
