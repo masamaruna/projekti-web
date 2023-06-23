@@ -1,11 +1,10 @@
 <!doctype html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PR</title>
+    <title>Koprivnica Building</title>
     <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -15,7 +14,10 @@
     <style>
 
         body {
-            background-color: #ffffff;
+            background-color: #F8FBFC;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            line-height: 1.6;
         }
 
         canvas {
@@ -24,14 +26,12 @@
         }
 
         .navbar{
-            background-color: #d9d9d9 !important;
+            background-color: #a04b12 !important;
         }
 
         .landing {
-            /*background-image: url("/assets/img/background-v1.webp");*/
-            /*background-position-y: -100px;*/
-            background-color: #b6b6b6;
-            padding-bottom: 150px;
+            background-color: #8A837B;
+            padding-bottom: 170px;
         }
 
         .negative-margin {
@@ -48,14 +48,96 @@
 
         .card {
             transition: 0.5s all;
-            background-color: #d9d9d9 !important;
+            background-color: #a04b12 !important;
+        }
+
+        .card-img-top {
+            /*width: 100%;*/
+            height: 15vw;
+            object-fit: cover;
         }
 
         .gray-background {
-            background-color: #aaaaaa;
+            background-color: #8A837B;
+        }
+
+        .invert {
+            filter: invert(100%);
+        }
+
+        .nav-logo {
+            width: 195px;
+            height: auto;
+            position: absolute;
+            top: 0;
+        }
+
+        @media only screen and (min-width: 992px) {
+            .nav-margin {
+                margin-left: 200px;
+            }
+        }
+
+        .mont-bold {
+            font-weight: 700;
+        }
+
+        .mont-extrabold {
+            font-weight: 800;
+        }
+
+        #threed-model {
+            margin-top: -90px;
+            margin-bottom: -30px;
+        }
+
+        @media only screen and (max-width: 992px) {
+            .custom-opacity {
+                opacity: 0.2;
+            }
+            .footer-logo {
+                max-width: 100px;
+            }
+        }
+
+        @media only screen and (max-width: 450px) {
+            .cta-txt-s {
+                padding-top: 15px;
+            }
+            .segmentthree-txt-s {
+                padding-bottom: 15px;
+            }
+        }
+
+        @media only screen and (max-width: 365px) {
+            .cta-txt-xs {
+                padding-top: 60px;
+            }
+            .segmentthree-txt-xs {
+                padding-bottom: 60px;
+            }
+        }
+
+        @media only screen and (max-width: 220px) {
+            .cta-txt-xxs {
+                padding-top: 80px;
+            }
+            .segmentthree-txt-xxs {
+                padding-bottom: 80px;
+            }
+        }
+
+        .cover {
+            width: 100%;
+            height: 20vw;
+            object-fit: cover;
         }
 
     </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
 
 </head>
 
@@ -65,23 +147,22 @@
 
 <!--NAVIGATION BAR-->
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
     <div class="container-fluid">
-        <!--            <a class="navbar-brand" href="#">Navbar</a>-->
-        <img src="/assets/logo/pr-logo-short.webp" alt="HTML5 Icon" style="width: 55px; height: auto">
+        <img src="/assets/logo/pr-logo-short.webp" alt="PR logo" class="nav-logo d-none d-md-none d-lg-block">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav nav-margin mont-extrabold">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active text-light" aria-current="page" href="http://www.projekti.net">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
+                    <a class="nav-link active text-light" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contacts</a>
+                    <a class="nav-link active text-light" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -92,119 +173,155 @@
 
 
 
-<div class="container">
 
-    <!--LANDING-->
+<!--LANDING-->
 
-    <div class="landing">
+<div class="landing pt-5">
+    <div class="container">
         <div class="row">
-            <div class="col-5"></div>
-            <div class="col-7">
-                <h1 class="fw-normal text-end">
+            <div class="d-none d-md-block col-lg-3"></div>
+            <div class="col-12 col-lg-9">
+                <p class="text-end fs-1 fw-bolder">
                     Koprivnica Building
-                </h1>
+                </p>
+            </div>
+        </div>
+        <div id="carouselExample" class="carousel slide pb-5 pt-2">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/assets/img/koprivnica-building/koprivnica-drone.jpg" class="d-block w-100 rounded cover" alt="drone shot of Koprivnica">
+                </div>
             </div>
         </div>
     </div>
+</div>
 
-    <!--END OF LANDING-->
+<!--END OF LANDING-->
 
+<div class="container">
 
-    <!--GALLERY 01-->
+<!--GALLERY-->
 
-    <div class="row justify-content-center">
+    <div class="row justify-content-center row-cols-1 row-cols-md-2 row-cols-lg-3 gx-md-5 gx-0 gy-4 negative-margin">
         <a href="https://unsplash.it/1200/768.jpg?image=261" data-toggle="lightbox" data-gallery="hidden-images" class="col-4">
-            <img src="https://unsplash.it/600.jpg?image=261" class="img-fluid">
+            <img src="https://unsplash.it/600.jpg?image=261" class="img-fluid rounded">
         </a>
         <a href="https://unsplash.it/1200/768.jpg?image=260" data-toggle="lightbox" data-gallery="hidden-images" class="col-4">
-            <img src="https://unsplash.it/600.jpg?image=260" class="img-fluid">
+            <img src="https://unsplash.it/600.jpg?image=260" class="img-fluid rounded">
         </a>
         <a href="https://unsplash.it/1200/768.jpg?image=263" data-toggle="lightbox" data-gallery="hidden-images" class="col-4">
-            <img src="https://unsplash.it/600.jpg?image=263" class="img-fluid">
+            <img src="https://unsplash.it/600.jpg?image=263" class="img-fluid rounded">
         </a>
         <!-- elements not showing, use data-remote or data-src-->
         <div data-toggle="lightbox" data-gallery="hidden-images" data-src="https://unsplash.it/1200/768.jpg?image=264" data-title="Hidden item 1"></div>
-        <div data-toggle="lightbox" data-gallery="hidden-images" data-src="http://localhost:5173/assets/img/koprivnica-building/arm-kat-koprivnica/ARM_KAT-001_a.pdf" data-title="Hidden item 3"></div>
+        <div data-toggle="lightbox" data-gallery="hidden-images" data-src="https://www.youtube.com/embed/dQw4w9WgXcQ" data-title="Hidden item 2"></div>
+        <div data-toggle="lightbox" data-gallery="hidden-images" data-src="https://unsplash.it/1200/768.jpg?image=265" data-title="Hidden item 3"></div>
         <div data-toggle="lightbox" data-gallery="hidden-images" data-src="https://unsplash.it/1200/768.jpg?image=266" data-title="Hidden item 4"></div>
+        <div data-toggle="lightbox" data-gallery="hidden-images" data-src="https://unsplash.it/1200/768.jpg?image=267" data-title="Hidden item 5"></div>
     </div>
+</div>
 
-    <!--GALLERY 01-->
+<div class="container">
 
-
-    <!--TEXT SEGMENT 03-->
-
-    <div class="row">
-        <p>
-            We've got charm, wit, and a knack for teamwork.
-            <br>
-            Our team is as sociable as your favorite barista on a random Wednesday, quick, and communicative.
-            <br>
-
-            <br>
-            <strong>And hey, we never compromise on quality – it's our middle name!</strong>
-        </p>
-    </div>
-
-    <!--END OF TEXT SEGMENT 03-->
-
-    <!--3D OBJECT-->
-
-    <div id="threed-model" style="margin-top: -150px; margin-bottom: -100px; z-index: -99999">
-        <canvas></canvas>
-    </div>
-
-    <!--3D OBJECT-->
-
-
-    <!--FOOTER-->
-
-    <div class="row footer">
-        <div class="col-2">
-            <img src="/assets/logo/pr-logo-short.webp" alt="PR d.o.o. logo" style="max-width: 150px">
-        </div>
-        <div class="col-4">
-            <p>
-                Contact
-                <br>
-                pr@projekti.net
-                <br>
-                +385 91 504 9132
-                <br>
-
-                <br>
-                Location
-                <br>
-                Slavka Batušića 3
-                <br>
-                10000 Zagreb, Croatia
-            </p>
-        </div>
-        <div class="col-5 text-end">
-            <p>
-                PR društvo s ograničenom odgovornošću
-                <br>
-                za projektiranje, građenje i nadzor
-                <br>
-                VAT: 11188483589
-                <br>
-                <br>
-                <br>
-                <br>
-                oblak  2023 - all rights reserved
-            </p>
-        </div>
-    </div>
-
-    <!--END OF FOOTER-->
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        <br>
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        <br>
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        <br>
+        It has survived not only five centuries, but also the leap into electronic typesetting,
+        <br>
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+        <br>
+        sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+        <br>
+        like Aldus PageMaker including versions of Lorem Ipsum
+    </p>
 
 </div>
 
 
+<div class="container">
 
+    <!--3D OBJECT-->
+
+    <div id="threed-model" class="opacity-75">
+        <canvas class="custom-opacity"></canvas>
+    </div>
+
+    <!--3D OBJECT-->
+
+
+<!--    &lt;!&ndash;EMAIL FORM&ndash;&gt;-->
+
+<!--    <div class="container mt-3">-->
+<!--        <form>-->
+<!--            <div class="mb-3">-->
+<!--                <label for="emailAddress" class="form-label">Email address</label>-->
+<!--                <input type="email" class="form-control" id="emailAddress" placeholder="name@example.com">-->
+<!--            </div>-->
+<!--            <div class="mb-3">-->
+<!--                <label for="userName" class="form-label">Your name</label>-->
+<!--                <input type="text" class="form-control" id="userName">-->
+<!--            </div>-->
+<!--            <div class="mb-3">-->
+<!--                <label for="emailMessage" class="form-label">Message</label>-->
+<!--                <textarea class="form-control" id="emailMessage" rows="3"></textarea>-->
+<!--            </div>-->
+<!--        </form>-->
+<!--    </div>-->
+
+<!--    &lt;!&ndash;END OF EMAIL FORM&ndash;&gt;-->
+
+</div>
+
+<!--FOOTER-->
+
+<div class="gray-background mt-0 mt-md-5 py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-2 pb-4">
+                <img src="/assets/logo/pr-logo-short.webp" alt="PR d.o.o. logo" class="img-fluid footer-logo">
+            </div>
+            <div class="col-12 col-md-4">
+                <p>
+                    <span class="mont-bold">Contact</span>
+                    <br>
+                    pr@projekti.net
+                    <br>
+                    +385 91 504 9132
+                    <br>
+
+                    <br>
+                    <span class="mont-bold">Location</span>
+                    <br>
+                    Slavka Batušića 3
+                    <br>
+                    10000 Zagreb, Croatia
+                </p>
+            </div>
+            <div class="col-12 col-md-6 text-start text-md-end">
+                <p>
+                    <span class="mont-bold">PR</span> društvo s ograničenom odgovornošću
+                    <br>
+                    za projektiranje, građenje i nadzor
+                    <br>
+                    <span class="mont-bold">VAT:</span> 11188483589
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <span class="mont-bold">oblak  2023 - all rights reserved</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--END OF FOOTER-->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script type="module" src="/main.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
 
 </body>
 
