@@ -6,7 +6,8 @@ const scene = new THREE.Scene();
 
 const camera = new THREE.PerspectiveCamera(20, 2, 0.1, 1000); // fov, aspect ratio, clip start, clip end (constraints)
 
-const renderer = new THREE.WebGL1Renderer({canvas: document.querySelector("canvas"), alpha: true});
+const renderer = new THREE.WebGL1Renderer({canvas: document.querySelector("canvas"), alpha: true, antialias: true});
+
 // renderer.setSize(window.innerWidth, window.innerHeight);
 
 renderer.setClearColor( 0x000000, 0 );
