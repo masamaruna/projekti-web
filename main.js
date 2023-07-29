@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-import model from './assets/3d-models/maslenica-3d-model.glb';
+import model from './models/maslenica-3d-model.glb';
 
 const scene = new THREE.Scene();
 
