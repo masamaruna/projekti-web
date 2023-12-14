@@ -16,7 +16,7 @@
     <style>
 
         body {
-            background-color: #F8FBFC;
+            background-color: #222529;
             font-family: 'Montserrat', sans-serif;
             font-weight: 500;
             line-height: 1.6;
@@ -28,11 +28,10 @@
         }
 
         .navbar {
-            background-color: #D9D9D9 !important;
+            background-color: #222529 !important;
         }
 
         .landing {
-            /*background-color: #B6B6B6;*/
             background-image: url("/random-images/page-landing-cover.jpg");
             background-size: cover;
             padding-bottom: 170px;
@@ -40,6 +39,10 @@
 
         .negative-margin {
             margin-top: -190px;
+        }
+
+        .location {
+            color: #a04b12;
         }
 
         .col:nth-child(odd) .card:hover {
@@ -52,17 +55,12 @@
 
         .card {
             transition: 0.5s all;
-            background-color: #D9D9D9 !important;
+            background-color: #222529 !important;
         }
 
-        .card-img-top {
-            /*width: 100%;*/
-            height: 15vw;
-            object-fit: cover;
-        }
-
-        .gray-background {
-            background-color: #B6B6B6;
+        .concrete-background {
+            background-image: url("/random-images/concrete-texture.jpg");
+            background-size: contain;
         }
 
         .invert {
@@ -154,13 +152,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav nav-margin mont-extrabold">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#projects">Projects</a>
+                        <a class="nav-link active text-white" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#contact">Contact</a>
+                        <a class="nav-link active text-white" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -176,22 +174,22 @@
             <div class="row">
                 <div class="d-none d-md-block col-lg-3"></div>
                 <div class="col-12 col-lg-9">
-                    <p class="text-end fs-5 text-white">
-                        Picture this: It all started way back in 1998,<br>
-                        when the world was still figuring out <br>
-                        what to do with scrunchies and pagers
-                        (time flies). <br>
+                    <p class="text-end fs-3 text-white mont-extrabold">
+                        Picture this: It all started way back in 1998; <br>
+
+                        </p>
+                    <p class="text-end fs-6 text-white">
+                        when the world was still figuring out<br>
+                        what to do with scrunchies and pagers,<br>
+                        is when Vladimir Rimac dig.,<br>
+                        a true trailblazer in bridge construction* started his legacy.
                         <br>
-                        Our founder, Vladimir Rimac dig.,<br>
-                        was a true trailblazer in bridge construction<br>
-                        (the cool kind called 'bridge construction by suppression').<br>
                         <br>
-                        Fast-forward to today, and we're proudly <br>
-                        entering our 25th year in the business!<br>
                         We've tackled everything from bridges to houses,<br>
-                        buildings to retaining walls
+                        buildings to retaining walls.
                         <br>
-                        - you name it, we made it!
+                        <br>
+                        <em class="mont-extrabold">You name it, we made it!</em>
                     </p>
                 </div>
             </div>
@@ -204,89 +202,77 @@
 
 <!--PROJECT CARDS-->
 
-    <a name="projects"></a>
+    <a id="projects"></a>
 
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gx-md-5 gx-0 gy-5 negative-margin">
         <div class="col">
-            <div class="card">
-                <img src="/projects/berlin/berlin-cover.jpg" alt="a 3D render of the building from Berlin">
+            <div class="card border border-dark border-5">
+                <img src="/projects/berlin/berlin-cover.jpg" alt="a 3D render of the building from Berlin" class="rounded">
                 <div class="card-img-overlay">
                     <p class="card-title mont-bold text-white fs-3">
-                        <i class="fa-solid fa-location-dot" style="color: #a04b12"></i>
+                        <i class="fa-solid fa-location-dot location"></i>
                         BERLIN
                     </p>
-<!--                    <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
-<!--                    <a href="./koprivnica-building.html" class="btn btn-light mont-bold">See More</a>-->
                 </div>
             </div>
         </div>
 
         <div class="col">
-            <div class="card">
-                <img src="/projects/cologne-01/cologne-01-cover.jpg" alt="a 3D render of the building from Cologne">
+            <div class="card border border-dark border-5">
+                <img src="/projects/cologne-01/cologne-01-cover.jpg" alt="a 3D render of the building from Cologne" class="rounded">
                 <div class="card-img-overlay">
                     <p class="card-title mont-bold text-white fs-3">
-                        <i class="fa-solid fa-location-dot" style="color: #a04b12"></i>
+                        <i class="fa-solid fa-location-dot location"></i>
                         COLOGNE
                     </p>
-<!--                    <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
-<!--                    <a href="#" class="btn btn-light mont-bold">See More</a>-->
                 </div>
             </div>
         </div>
 
         <div class="col">
-            <div class="card">
-                <img src="/projects/cologne-02/cologne-02-cover.jpg" alt="a 3D render of the building from Cologne">
+            <div class="card border border-dark border-5">
+                <img src="/projects/cologne-02/cologne-02-cover.jpg" alt="a 3D render of the building from Cologne" class="rounded">
                 <div class="card-img-overlay">
                     <p class="card-title mont-bold text-white fs-3">
-                        <i class="fa-solid fa-location-dot" style="color: #a04b12"></i>
+                        <i class="fa-solid fa-location-dot location"></i>
                         COLOGNE
                     </p>
-<!--                    <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
-<!--                    <a href="#" class="btn btn-light mont-bold">See More</a>-->
                 </div>
             </div>
         </div>
 
         <div class="col">
-            <div class="card">
-                <img src="/projects/petrinja/petrinja-cover.jpg" alt="a 3D render of the building from Petrinja">
+            <div class="card border border-dark border-5">
+                <img src="/projects/petrinja/petrinja-cover.jpg" alt="a 3D render of the building from Petrinja" class="rounded">
                 <div class="card-img-overlay">
                     <p class="card-title mont-bold text-white fs-3">
-                        <i class="fa-solid fa-location-dot" style="color: #a04b12"></i>
+                        <i class="fa-solid fa-location-dot location"></i>
                         PETRINJA
                     </p>
-<!--                    <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
-<!--                    <a href="#" class="btn btn-light mont-bold">See More</a>-->
                 </div>
             </div>
         </div>
 
         <div class="col">
-            <div class="card">
-                <img src="/projects/koprivnica/koprivnica-cover-duotone.jpg" alt="a picture of the building from Koprivnica">
+            <div class="card border border-dark border-5">
+                <img src="/projects/koprivnica/koprivnica-cover-duotone.jpg" alt="a picture of the building from Koprivnica" class="rounded">
                 <div class="card-img-overlay">
                     <p class="card-title mont-bold text-white fs-3">
-                        <i class="fa-solid fa-location-dot" style="color: #a04b12"></i>
+                        <i class="fa-solid fa-location-dot location"></i>
                         KOPRIVNICA
                     </p>
-<!--                    <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
-<!--                    <a href="#" class="btn btn-light mont-bold">See More</a>-->
                 </div>
             </div>
         </div>
 
         <div class="col">
-            <div class="card">
-                <img src="/projects/zagreb/zagreb-cover.jpg" alt="a 3D render of the building from Zagreb" class="ratio ratio-1x1">
+            <div class="card border border-dark border-5">
+                <img src="/projects/zagreb/zagreb-cover.jpg" alt="a 3D render of the building from Zagreb" class="rounded">
                 <div class="card-img-overlay">
                     <p class="card-title mont-bold text-white fs-3">
-                        <i class="fa-solid fa-location-dot" style="color: #a04b12"></i>
+                        <i class="fa-solid fa-location-dot location"></i>
                         ZAGREB
                     </p>
-<!--                    <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
-<!--                    <a href="#" class="btn btn-light mont-bold">See More</a>-->
                 </div>
             </div>
         </div>
@@ -298,11 +284,11 @@
 
 <!--TEXT SEGMENT 02-->
 
-<div class="gray-background py-5 mt-5">
+<div class="concrete-background py-5 mt-5">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-12 col-lg-7">
-                <p>
+                <p class="text-white">
                     Gone are the days of dusty tracing paper
                     <br>
                     and ancient 2D programs.
@@ -311,7 +297,7 @@
                     <br>
                     We've embraced the new millennium with open arms and
                     <br>
-                    cutting-edge technology with Nemetschek Allplan!
+                    cutting-edge technology with <b>Nemetschek Allplan!</b>
                     <br>
 
                     <br>
@@ -323,11 +309,11 @@
                     <br>
                     No more hiding errors or sneaky defects –
                     <br>
-                    we spot them all with our virtual prototypes!
+                    we spot them all with our <b>virtual prototypes!</b>
                 </p>
             </div>
             <div class="col-5 d-none d-lg-block">
-                <img src="/random-images/allplan-interface.jpeg" class="img-fluid rounded" alt="allplan interface">
+                <img src="/random-images/allplan-interface.jpeg" class="img-fluid rounded border border-dark border-5" alt="allplan interface">
             </div>
         </div>
 
@@ -339,13 +325,13 @@
         <div id="carouselExample" class="carousel slide mt-5">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="/random-images/zeceve-drage-01.jpeg" class="d-block w-100 rounded" alt="...">
+                    <img src="/random-images/zeceve-drage-01.jpeg" class="d-block w-100 rounded border border-dark border-5" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="/random-images/buildings-01.jpeg" class="d-block w-100 rounded" alt="...">
+                    <img src="/random-images/buildings-01.jpeg" class="d-block w-100 rounded border border-dark border-5" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="/random-images/bridges-01.jpeg" class="d-block w-100 rounded" alt="...">
+                    <img src="/random-images/bridges-01.jpeg" class="d-block w-100 rounded border border-dark border-5" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev invert" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -364,11 +350,9 @@
 
 <div class="container">
 
-<a name="contact"></a>
-
 <!--TEXT SEGMENT 03-->
 
-    <div class="row text-center mt-5 segmentthree-txt-s segmentthree-txt-xs segmentthree-txt-xxs">
+    <div class="row text-center mt-5 segmentthree-txt-s segmentthree-txt-xs segmentthree-txt-xxs text-white">
         <p>
             We've got charm, wit, and a knack for teamwork.
             <br>
@@ -393,29 +377,30 @@
 <!--CTA-->
 
     <div class="row text-center position-relative z-n1 cta-txt-s cta-txt-xs cta-txt-xxs">
-        <span class="mont-extrabold fs-1">
+        <span class="mont-extrabold fs-1 text-white">
             We'd love to work with you!
         </span>
     </div>
 
 <!--END OF CTA-->
 
+    <a id="contact"></a>
 
 <!--EMAIL FORM-->
 
         <div class="container mt-3">
             <form>
                 <div class="mb-3">
-                    <label for="emailAddress" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="emailAddress" placeholder="name@example.com">
+                    <label for="emailAddress" class="form-label text-white">Email address</label>
+                    <input type="email" class="form-control text-dark-emphasis bg-dark-subtle border border-dark-subtle rounded-3" id="emailAddress" placeholder="name@example.com">
                 </div>
                 <div class="mb-3">
-                    <label for="userName" class="form-label">Your name</label>
-                    <input type="text" class="form-control" id="userName">
+                    <label for="userName" class="form-label text-white">Your name</label>
+                    <input type="text" class="form-control text-dark-emphasis bg-dark-subtle border border-dark-subtle rounded-3" id="userName">
                 </div>
                 <div class="mb-3">
-                    <label for="emailMessage" class="form-label">Message</label>
-                    <textarea class="form-control" id="emailMessage" rows="3"></textarea>
+                    <label for="emailMessage" class="form-label text-white">Message</label>
+                    <textarea class="form-control text-dark-emphasis bg-dark-subtle border border-dark-subtle rounded-3" id="emailMessage" rows="3"></textarea>
                 </div>
             </form>
     </div>
@@ -426,13 +411,13 @@
 
 <!--FOOTER-->
 
-    <div class="gray-background mt-0 mt-md-5 py-5">
+    <div class="concrete-background mt-0 mt-md-5 py-5">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-2 pb-4">
                     <img src="/logo/pr-logo-short.webp" alt="PR d.o.o. logo" class="img-fluid footer-logo">
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 text-white">
                     <p>
                         <span class="mont-bold">Contact</span>
                         <br>
@@ -450,7 +435,7 @@
                     </p>
                 </div>
                 <div class="col-12 col-md-6 text-start text-md-end">
-                    <p>
+                    <p class="text-white">
                         <span class="mont-bold">PR</span> društvo s ograničenom odgovornošću
                         <br>
                         za projektiranje, građenje i nadzor
