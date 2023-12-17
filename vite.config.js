@@ -7,7 +7,7 @@ export default ({
             rollupOptions: {
                 input: {
                     main: resolve(__dirname, 'index.html'),
-                    koprivnica: resolve(__dirname, 'koprivnica-building.html')
+                    koprivnica: resolve(__dirname, 'koprivnica.html')
                 }
             }
         }
