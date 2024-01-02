@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cologne</title>
+    <link rel="icon" type="image/x-icon" href="/logo/pr-favicon.png">
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            crossorigin="anonymous"
+    >
+
+    <style>
+
+        body {
+            background-color: #222529;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            line-height: 1.6;
+        }
+
+        canvas {
+            width: 100%;
+            height: 100%;
+        }
+
+        a:link {
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar{
+            background-color: #222529 !important;
+        }
+
+        .landing {
+            background-image: url("/random-images/page-landing-cover.jpg");
+            background-size: cover;
+            padding-bottom: 170px;
+        }
+
+        .negative-margin {
+            margin-top: -190px;
+        }
+
+        .concrete-background {
+            background-image: url("/random-images/concrete-texture.jpg");
+            background-size: contain;
+        }
+
+        .nav-logo {
+            width: 195px;
+            height: auto;
+            position: absolute;
+            top: 0;
+        }
+
+        @media only screen and (min-width: 992px) {
+            .nav-margin {
+                margin-left: 200px;
+            }
+        }
+
+        .mont-bold {
+            font-weight: 700;
+        }
+
+        .mont-extrabold {
+            font-weight: 800;
+        }
+
+        #threed-model {
+            margin-top: -30px;
+            margin-bottom: -30px;
+        }
+
+        @media only screen and (max-width: 992px) {
+            .custom-opacity {
+                opacity: 0.2;
+            }
+            .footer-logo {
+                max-width: 100px;
+            }
+        }
+
+        .cover {
+            width: 100%;
+            height: 20vw;
+            object-fit: cover;
+        }
+
+        .bw {
+            filter: grayscale(100%);
+        }
+
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+<!--NAVIGATION BAR-->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <div class="container-fluid">
+        <img src="/logo/pr-logo-short.webp" alt="PR logo" class="nav-logo d-none d-md-none d-lg-block">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav nav-margin mont-extrabold">
+                <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="https://www.projekti.net">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-light" href="https://www.projekti.net#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-light" href="https://www.projekti.net#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--END OF NAVIGATION BAR-->
+
+
+<!--LANDING-->
+
+<div class="landing pt-5">
+    <div class="container">
+        <div class="row">
+            <div class="d-none d-md-block col-lg-3"></div>
+            <div class="col-12 col-lg-9">
+                <p class="text-end fs-1 fw-bolder text-white">
+                    COLOGNE
+                </p>
+            </div>
+        </div>
+        <div id="carouselExample" class="carousel slide pb-5 pt-2">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/projects/cologne-02/cologne-02-page-duotone.jpg" class="d-block w-100 rounded cover bw" alt="a picture of the building in Koprivnica">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--END OF LANDING-->
+
+<div class="container">
+
+    <!--GALLERY-->
+
+    <div class="row justify-content-center row-cols-1 row-cols-md-2 row-cols-lg-3 gx-md-5 gx-0 gy-4 negative-margin">
+
+        <div class="col-4">
+            <a href="/projects/cologne-02/armature/arm-kat-cologne2/ARM_KAT-001_d.pdf" data-toggle="lightbox" data-gallery="basement-reinforcement">
+                <img src="/projects/ARM_KAT-000.jpg" class="img-fluid rounded">
+            </a>
+            <div data-toggle="lightbox" data-gallery="basement-reinforcement" data-src="/projects/cologne-02/armature/arm-kat-cologne2/ARM_KAT-002_d.pdf" data-title="Hidden item 2"></div>
+            <div data-toggle="lightbox" data-gallery="basement-reinforcement" data-src="/projects/cologne-02/armature/arm-kat-cologne2/ARM_KAT-003_d.pdf" data-title="Hidden item 3"></div>
+            <div data-toggle="lightbox" data-gallery="basement-reinforcement" data-src="/projects/cologne-02/armature/arm-kat-cologne2/ARM_KAT-004_d.pdf" data-title="Hidden item 4"></div>
+            <div data-toggle="lightbox" data-gallery="basement-reinforcement" data-src="/projects/cologne-02/armature/arm-kat-cologne2/ARM_KAT-005_d.pdf" data-title="Hidden item 4"></div>
+            <div data-toggle="lightbox" data-gallery="basement-reinforcement" data-src="/projects/cologne-02/armature/arm-kat-cologne2/ARM_KAT-006_d.pdf" data-title="Hidden item 4"></div>
+            <div data-toggle="lightbox" data-gallery="basement-reinforcement" data-src="/projects/cologne-02/armature/arm-kat-cologne2/ARM_KAT-007_d.pdf" data-title="Hidden item 4"></div>
+            <div data-toggle="lightbox" data-gallery="basement-reinforcement" data-src="/projects/cologne-02/armature/arm-kat-cologne2/ARM_KAT-008_d.pdf" data-title="Hidden item 4"></div>
+            <div data-toggle="lightbox" data-gallery="basement-reinforcement" data-src="/projects/cologne-02/armature/arm-kat-cologne2/ARM_KAT-009_d.pdf" data-title="Hidden item 4"></div>
+        </div>
+
+        <div class="col-4">
+            <a href="/projects/cologne-02/armature/arm-podrum-cologne2/ARM_PODRUM-001_d.pdf" data-toggle="lightbox" data-gallery="foundation-reinforcement">
+                <img src="/projects/ARM_PODRUM-000.jpg" class="img-fluid rounded">
+            </a>
+            <div data-toggle="lightbox" data-gallery="foundation-reinforcement" data-src="/projects/cologne-02/armature/arm-podrum-cologne2/ARM_PODRUM-002_d.pdf" data-title="Hidden item 2"></div>
+            <div data-toggle="lightbox" data-gallery="foundation-reinforcement" data-src="/projects/cologne-02/armature/arm-podrum-cologne2/ARM_PODRUM-003_d.pdf" data-title="Hidden item 3"></div>
+            <div data-toggle="lightbox" data-gallery="foundation-reinforcement" data-src="/projects/cologne-02/armature/arm-podrum-cologne2/ARM_PODRUM-004_d.pdf" data-title="Hidden item 4"></div>
+        </div>
+
+        <div class="col-4">
+            <a href="/projects/cologne-02/armature/arm-temelji-cologne2/ARM_TEMELJI-001_d.pdf" data-toggle="lightbox" data-gallery="foundation-reinforcement">
+                <img src="/projects/ARM_PODRUM-000.jpg" class="img-fluid rounded">
+            </a>
+<!--            <div data-toggle="lightbox" data-gallery="foundation-reinforcement" data-src="/projects/cologne-02/armature/arm-podrum-cologne2/ARM_PODRUM-002_d.pdf" data-title="Hidden item 2"></div>-->
+<!--            <div data-toggle="lightbox" data-gallery="foundation-reinforcement" data-src="/projects/cologne-02/armature/arm-podrum-cologne2/ARM_PODRUM-003_d.pdf" data-title="Hidden item 3"></div>-->
+<!--            <div data-toggle="lightbox" data-gallery="foundation-reinforcement" data-src="/projects/cologne-02/armature/arm-podrum-cologne2/ARM_PODRUM-004_d.pdf" data-title="Hidden item 4"></div>-->
+        </div>
+
+        <div class="col-4">
+            <a href="/projects/cologne-02/armature/formwork/FRMWRK-001_d.pdf" data-toggle="lightbox" data-gallery="floor-reinforcement">
+                <img src="/projects/FRMWRK-000.jpg" class="img-fluid rounded">
+            </a>
+            <!-- elements not showing, use data-remote or data-src-->
+            <div data-toggle="lightbox" data-gallery="floor-reinforcement" data-src="/projects/cologne-02/armature/floorworK/FLRWRK-002_c.pdf" data-title="Hidden item 2"></div>
+            <div data-toggle="lightbox" data-gallery="floor-reinforcement" data-src="/projects/cologne-02/armature/floorworK/FLRWRK-003_c.pdf" data-title="Hidden item 3"></div>
+            <div data-toggle="lightbox" data-gallery="floor-reinforcement" data-src="/projects/cologne-02/armature/floorworK/FLRWRK-004_c.pdf" data-title="Hidden item 4"></div>
+            <div data-toggle="lightbox" data-gallery="floor-reinforcement" data-src="/projects/cologne-02/armature/floorworK/FLRWRK-005_c.pdf" data-title="Hidden item 4"></div>
+            <div data-toggle="lightbox" data-gallery="floor-reinforcement" data-src="/projects/cologne-02/armature/floorworK/FLRWRK-006_c.pdf" data-title="Hidden item 4"></div>
+            <div data-toggle="lightbox" data-gallery="floor-reinforcement" data-src="/projects/cologne-02/armature/floorworK/FLRWRK-007_c.pdf" data-title="Hidden item 4"></div>
+            <div data-toggle="lightbox" data-gallery="floor-reinforcement" data-src="/projects/cologne-02/armature/floorworK/FLRWRK-008_c.pdf" data-title="Hidden item 4"></div>
+            <div data-toggle="lightbox" data-gallery="floor-reinforcement" data-src="/projects/cologne-02/armature/floorworK/FLRWRK-009_c.pdf" data-title="Hidden item 4"></div>
+            <div data-toggle="lightbox" data-gallery="floor-reinforcement" data-src="/projects/cologne-02/armature/floorworK/FLRWRK-010_c.pdf" data-title="Hidden item 4"></div>
+            <div data-toggle="lightbox" data-gallery="floor-reinforcement" data-src="/projects/cologne-02/armature/floorworK/FLRWRK-011_c.pdf" data-title="Hidden item 4"></div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="container">
+
+    <!--3D OBJECT-->
+
+    <div id="threed-model" class="opacity-75">
+        <canvas class="custom-opacity"></canvas>
+    </div>
+
+    <!--3D OBJECT-->
+
+</div>
+
+<!--FOOTER-->
+
+<div class="concrete-background mt-0 mt-md-5 py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-2 pb-4">
+                <img src="/logo/pr-logo-short.webp" alt="PR d.o.o. logo" class="img-fluid footer-logo">
+            </div>
+            <div class="col-12 col-md-4 text-white">
+                <p>
+                    <span class="mont-bold">Contact</span>
+                    <br>
+                    <a href="mailto:pr@projekti.net">pr@projekti.net</a>
+                    <br>
+                    <a href="tel:+385915049132">+385 91 504 9132</a>
+                    <br>
+
+                    <br>
+                    <span class="mont-bold">Location</span>
+                    <br>
+                    Slavka Batušića 3
+                    <br>
+                    10000 Zagreb, Croatia
+                </p>
+            </div>
+            <div class="col-12 col-md-6 text-start text-md-end text-white">
+                <p>
+                    <span class="mont-bold">PR</span> društvo s ograničenom odgovornošću
+                    <br>
+                    za projektiranje, građenje i nadzor
+                    <br>
+                    <span class="mont-bold">VAT:</span> 11188483589
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <span class="mont-bold">oblak  2023 - all rights reserved</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--END OF FOOTER-->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="./main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+</body>
+
+
+</html>
