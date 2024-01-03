@@ -20,7 +20,7 @@ a:link {
 }
 
 .landing {
-    background-image: url("/random-images/page-landing-cover.jpg");
+    background-image: url("/public/random-images/page-landing-cover.jpg");
     background-size: cover;
     padding-bottom: 170px;
 }
@@ -30,7 +30,7 @@ a:link {
 }
 
 .concrete-background {
-    background-image: url("/random-images/concrete-texture.jpg");
+    background-image: url("/public/random-images/concrete-texture.jpg");
     background-size: contain;
 }
 
