@@ -415,19 +415,21 @@
 <!--EMAIL FORM-->
 
         <div class="container mt-3">
-            <form>
+            <form action="https://formsubmit.co/pr@projekti.net" method="POST">
                 <div class="mb-3">
                     <label for="emailAddress" class="form-label text-white">Email address</label>
-                    <input type="email" class="form-control text-dark-emphasis bg-dark-subtle border border-dark-subtle rounded-3" id="emailAddress" placeholder="name@example.com">
+                    <input type="email" name="email" required class="form-control text-dark-emphasis bg-dark-subtle border border-dark-subtle rounded-3" id="emailAddress" placeholder="name@example.com">
                 </div>
                 <div class="mb-3">
                     <label for="userName" class="form-label text-white">Your name</label>
-                    <input type="text" class="form-control text-dark-emphasis bg-dark-subtle border border-dark-subtle rounded-3" id="userName">
+                    <input type="text" name="name" required class="form-control text-dark-emphasis bg-dark-subtle border border-dark-subtle rounded-3" id="userName">
                 </div>
                 <div class="mb-3">
                     <label for="emailMessage" class="form-label text-white">Message</label>
                     <textarea class="form-control text-dark-emphasis bg-dark-subtle border border-dark-subtle rounded-3" id="emailMessage" rows="3"></textarea>
                 </div>
+<!--                <button type="submit">Send</button>-->
+                <button type="submit" class="btn btn-secondary">Send</button>
             </form>
     </div>
 
