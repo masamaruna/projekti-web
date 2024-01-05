@@ -1,7 +1,7 @@
-
 import { resolve } from 'path'
+import { defineConfig } from "vite";
 
-export default ({
+export default defineConfig({
         assetsInclude: ['**/*.glb'],
         build: {
             rollupOptions: {
