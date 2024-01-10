@@ -20,7 +20,7 @@ a:link {
 }
 
 .landing {
-    background-image: url("/public/random-images/page-landing-cover.jpg");
+    background-image: url("/img/page-landing-cover.jpg");
     background-size: cover;
     padding-bottom: 170px;
 }
@@ -30,7 +30,7 @@ a:link {
 }
 
 .concrete-background {
-    background-image: url("/public/random-images/concrete-texture.jpg");
+    background-image: url("/img/concrete-texture.jpg");
     background-size: contain;
 }
 
@@ -55,9 +55,12 @@ a:link {
     font-weight: 800;
 }
 
-#threed-model {
-    margin-top: -30px;
-    margin-bottom: -30px;
+
+@media only screen and (min-width: 768px) {
+    #threed-model {
+        margin-top: -30px;
+        margin-bottom: -30px;
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -87,4 +90,8 @@ a:link {
     margin-top: -2.5rem;
     margin-right: -2.5rem;
     opacity: 1;
+}
+
+.hamburger-invert {
+    filter: invert(1);
 }

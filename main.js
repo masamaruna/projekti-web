@@ -40,7 +40,7 @@ let currentRotation = 0;
 window.addEventListener("scroll", rotateOnScroll);
 function rotateOnScroll() {
     currentRotation = window.scrollY / 90;
-    console.log(currentRotation);
+    // console.log(currentRotation);
 }
 
 function animate() {
