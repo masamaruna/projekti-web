@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-import model from './models/maslenica-3d-model.glb';
+import model from './models/koprivnca-3d-model.glb';
 
 const scene = new THREE.Scene();
 
@@ -20,7 +20,7 @@ const loader = new GLTFLoader();
 
 loader.load( model , function ( gltf ) {
 
-    gltf.scene.scale.set(0.03, 0.03, 0.03);
+    gltf.scene.scale.set(0.01, 0.01, 0.01);
     scene.add(gltf.scene);
     scene.rotation.x = 0.3;
 
