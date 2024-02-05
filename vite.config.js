@@ -13,6 +13,7 @@ export default defineConfig({
                     berlin: resolve(__dirname, 'berlin.html'),
                     cologne01: resolve(__dirname, 'cologne-01.html'),
                     cologne02: resolve(__dirname, 'cologne-02.html'),
+                    references: resolve(__dirname, 'references.html'),
                 }
             }
         }
